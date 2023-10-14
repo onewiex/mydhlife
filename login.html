@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div
+    id="in-page-channel-node-id"
+    data-channel-name="in_page_channel_4kc45o"
+  ></div>
+  <!--<!
+  [endif]--><head>
+    <meta charset="utf-8" />
+    <title>Member Login - MyDHLife</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link
+      href="/assets/global/plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/global/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/global/plugins/uniform/css/uniform.default.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/global/plugins/select2/css/select2.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/global/plugins/select2/css/select2-bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/global/css/components-rounded.min.css"
+      rel="stylesheet"
+      id="style_components"
+      type="text/css"
+    />
+    <link
+      href="/assets/global/css/plugins.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/assets/pages/css/login-4.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/css/members.css" rel="stylesheet" type="text/css" />
+    <link href="/images/favicon.png" type="image/x-icon" rel="shortcut icon" />
+    <script
+      src="/assets/global/plugins/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <style>
+      .logo img {
+        width: 100%;
+        min-width: 280px;
+        max-width: 488px;
+      }
+      @media (max-width: 499px) {
+        .login .content {
+          width: 280px;
+        }
+      }
+    </style>
+  </head>
+  <body class="login">
+    <div class="logo" style="margin-top: 20px">
+      <a href="/"> <img src="/images/logo-mydhlife-login.png" alt="" /></a
+      ><br />
+      <a href="/" class="font-dark bold">Home Page</a>
+    </div>
+    <style>
+      .login .content {
+        background: url('assets/pages/img/bg-dark.png') repeat;
+      }
+    </style>
+    <div class="content" style="text-align: center; min-width: 280px">
+      <form
+        class="login-form"
+        action="/members/login/"
+        method="post"
+        novalidate="novalidate"
+      >
+        <h3 class="form-title font-yellow-crusta bold">LOGIN</h3>
+        <div class="alert alert-danger display-hide">
+          <button class="close" data-close="alert"></button>
+          <span> Enter any email address and password. </span>
+        </div>
+        <div class="form-group">
+          <label class="control-label visible-ie8 visible-ie9"
+            >Email Address</label
+          >
+          <div class="input-icon">
+            <i class="fa fa-envelope"></i>
+            <input
+              id="coinmarketcap-username"
+              class="form-control placeholder-no-fix"
+              type="text"
+              autocomplete="off"
+              placeholder="Email Address"
+              name="email"
+              required=""
+              aria-required="true"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label visible-ie8 visible-ie9">Password</label>
+          <div class="input-icon">
+            <i class="fa fa-lock"></i>
+            <input
+              id="coinmarketcap-password"
+              class="form-control placeholder-no-fix"
+              type="password"
+              autocomplete="off"
+              placeholder="Password"
+              name="password"
+              required=""
+              aria-required="true"
+            />
+          </div>
+        </div>
+        <!-- <center>
+          <img
+            src="/images/captcha/1697291056.3216.jpg"
+            style="width: 200; height: 40; border: 0"
+            alt="Your Captcha Code is: Six, Four, Nine, Zero."
+          />
+        </center>
+        <div class="clear"></div>
+        <div class="form-group">
+          <div class="input-icon">
+            <i class="fa fa-lock"></i>
+            <input
+              class="form-control placeholder-no-fix bg-blue-chambray bg-font-blue-chambray"
+              type="text"
+              autocomplete="off"
+              name="captcha"
+              placeholder="Enter Captcha Code"
+              alt="Enter Captcha Code Here"
+              value=""
+              required=""
+              aria-required="true"
+            />
+          </div>
+        </div> -->
+        <div class="form-actions" style="text-align: center">
+          <button
+            id="coinmarketcap-login"
+            type="submit"
+            class="btn red-thunderbird pull-right"
+          >
+            Login
+          </button>
+        </div>
+        <div class="forget-password">
+          <h4>Forgot your password ?</h4>
+          <p>
+            <a
+              href="https://mydhlife.com/members/join/now/hyipwise.com"
+              id="forget-password"
+              class="font-yellow-lemon bold"
+              >click here</a
+            >
+            to start password recovery.
+          </p>
+        </div>
+        <div class="create-account">
+          <p>
+            Don't have an account yet?&nbsp;
+            <a
+              href="https://mydhlife.com/members/join/now/hyipwise.com"
+              id="register-btn"
+              class="font-yellow-lemon bold"
+              >Create an account</a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="copyright">© 2023 &nbsp; MyDHLife</div>
+    <!--[if lt IE 9]>
+      <script src="/assets/global/plugins/respond.min.js"></script>
+      <script src="/assets/global/plugins/excanvas.min.js"></script>
+    <![endif]-->
+    <script
+      src="/assets/global/plugins/bootstrap/js/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/js.cookie.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/jquery.blockui.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/uniform/jquery.uniform.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/jquery-validation/js/jquery.validate.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/jquery-validation/js/additional-methods.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/select2/js/select2.full.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/plugins/backstretch/jquery.backstretch.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="/assets/global/scripts/app.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript">
+      var Login = (function () {
+        var handleLogin = function () {
+          $('.login-form').validate({
+            errorElement: 'span', //default input error message container
+            errorClass: 'help-block', // default input error message class
+            focusInvalid: false, // do not focus the last invalid input
+            rules: {
+              username: {
+                required: true,
+              },
+              password: {
+                required: true,
+              },
+              remember: {
+                required: false,
+              },
+            },
+
+            messages: {
+              username: {
+                required: 'Username is required.',
+              },
+              password: {
+                required: 'Password is required.',
+              },
+            },
+
+            invalidHandler: function (event, validator) {
+              //display error alert on form submit
+              $('.alert-danger', $('.login-form')).show();
+            },
+
+            highlight: function (element) {
+              // hightlight error inputs
+              $(element).closest('.form-group').addClass('has-error'); // set error class to the control group
+            },
+
+            success: function (label) {
+              label.closest('.form-group').removeClass('has-error');
+              label.remove();
+            },
+
+            errorPlacement: function (error, element) {
+              error.insertAfter(element.closest('.input-icon'));
+            },
+
+            submitHandler: function (form) {
+              form.submit();
+            },
+          });
+
+          $('.login-form input').keypress(function (e) {
+            if (e.which == 13) {
+              if ($('.login-form').validate().form()) {
+                $('.login-form').submit();
+              }
+              return false;
+            }
+          });
+        };
+
+        var handleForgetPassword = function () {
+          $('.forget-form').validate({
+            errorElement: 'span', //default input error message container
+            errorClass: 'help-block', // default input error message class
+            focusInvalid: false, // do not focus the last invalid input
+            ignore: '',
+            rules: {
+              email: {
+                required: true,
+                email: true,
+              },
+            },
+
+            messages: {
+              email: {
+                required: 'Email is required.',
+              },
+            },
+
+            invalidHandler: function (event, validator) {
+              //display error alert on form submit
+            },
+
+            highlight: function (element) {
+              // hightlight error inputs
+              $(element).closest('.form-group').addClass('has-error'); // set error class to the control group
+            },
+
+            success: function (label) {
+              label.closest('.form-group').removeClass('has-error');
+              label.remove();
+            },
+
+            errorPlacement: function (error, element) {
+              error.insertAfter(element.closest('.input-icon'));
+            },
+
+            submitHandler: function (form) {
+              form.submit();
+            },
+          });
+
+          $('.forget-form input').keypress(function (e) {
+            if (e.which == 13) {
+              if ($('.forget-form').validate().form()) {
+                $('.forget-form').submit();
+              }
+              return false;
+            }
+          });
+
+          jQuery('#forget-password').click(function () {
+            jQuery('.login-form').hide();
+            jQuery('.forget-form').show();
+          });
+
+          jQuery('#back-btn').click(function () {
+            jQuery('.login-form').show();
+            jQuery('.forget-form').hide();
+          });
+        };
+
+        var handleRegister = function () {
+          function format(state) {
+            if (!state.id) {
+              return state.text;
+            }
+            var $state = $(
+              '<span><img src="../assets/global/img/flags/' +
+                state.element.value.toLowerCase() +
+                '.png" class="img-flag" /> ' +
+                state.text +
+                '</span>'
+            );
+
+            return $state;
+          }
+
+          if (jQuery().select2 && $('#country_list').size() > 0) {
+            $('#country_list').select2({
+              placeholder:
+                '<i class="fa fa-map-marker"></i>&nbsp;Select a Country',
+              templateResult: format,
+              templateSelection: format,
+              width: 'auto',
+              escapeMarkup: function (m) {
+                return m;
+              },
+            });
+
+            $('#country_list').change(function () {
+              $('.register-form').validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
+            });
+          }
+
+          $('.register-form').validate({
+            errorElement: 'span', //default input error message container
+            errorClass: 'help-block', // default input error message class
+            focusInvalid: false, // do not focus the last invalid input
+            ignore: '',
+            rules: {
+              fullname: {
+                required: true,
+              },
+              email: {
+                required: true,
+                email: true,
+              },
+              address: {
+                required: true,
+              },
+              city: {
+                required: true,
+              },
+              country: {
+                required: true,
+              },
+
+              username: {
+                required: true,
+              },
+              password: {
+                required: true,
+              },
+              rpassword: {
+                equalTo: '#register_password',
+              },
+
+              tnc: {
+                required: true,
+              },
+            },
+
+            messages: {
+              // custom messages for radio buttons and checkboxes
+              tnc: {
+                required: 'Please accept TNC first.',
+              },
+            },
+
+            invalidHandler: function (event, validator) {
+              //display error alert on form submit
+            },
+
+            highlight: function (element) {
+              // hightlight error inputs
+              $(element).closest('.form-group').addClass('has-error'); // set error class to the control group
+            },
+
+            success: function (label) {
+              label.closest('.form-group').removeClass('has-error');
+              label.remove();
+            },
+
+            errorPlacement: function (error, element) {
+              if (element.attr('name') == 'tnc') {
+                // insert checkbox errors after the container
+                error.insertAfter($('#register_tnc_error'));
+              } else if (element.closest('.input-icon').size() === 1) {
+                error.insertAfter(element.closest('.input-icon'));
+              } else {
+                error.insertAfter(element);
+              }
+            },
+
+            submitHandler: function (form) {
+              form.submit();
+            },
+          });
+
+          $('.register-form input').keypress(function (e) {
+            if (e.which == 13) {
+              if ($('.register-form').validate().form()) {
+                $('.register-form').submit();
+              }
+              return false;
+            }
+          });
+
+          jQuery('#register-btn').click(function () {
+            jQuery('.login-form').hide();
+            jQuery('.register-form').show();
+          });
+
+          jQuery('#register-back-btn').click(function () {
+            jQuery('.login-form').show();
+            jQuery('.register-form').hide();
+          });
+        };
+
+        return {
+          //main function to initiate the module
+          init: function () {
+            handleLogin();
+            handleForgetPassword();
+            handleRegister();
+
+            // init background slide images
+            $.backstretch(['images/backgrounds/3.jpg'], {
+              fade: 1000,
+              duration: 8000,
+            });
+          },
+        };
+      })();
+
+      jQuery(document).ready(function () {
+        Login.init();
+      });
+    </script>
+    <script type="text/javascript">
+      var modal = {
+        initialize: function () {
+          $('#modalGoback').prop('href', 'javascript:;');
+          $('#modalGoback').hide();
+        },
+        getSession: function () {
+          $.get('/ajax/mysession/', function (data) {
+            if (data.indexOf('{"login":1}') == 0) {
+              window.location.replace('login');
+            }
+          });
+          return true;
+        },
+        getView: function (url, style = 'modal-lg') {
+          if (modal.getSession()) {
+            $('#modalbody').html(
+              '<center style="margin:40px;"><button type="button" style="cursor:not-allowed;" class="btn btn-sm btn-default"><img src="/images/loading.gif"> Loading... Please Wait</button></center>'
+            );
+            $('.modal-dialog').removeClass('modal-sm modal-md modal-lg');
+            $('.modal-dialog').addClass(style);
+            $.get('/' + url, function (data) {
+              $('#modalbody').html(data);
+            });
+          }
+        },
+        getCausePage: function (id) {
+          if (modal.getSession()) {
+            $.get(
+              '/members/our_global_causes/get_cause_page/' + id,
+              function (data) {
+                $('html,body').animate(
+                  {
+                    scrollTop: $('#global-causes').offset().top - 200,
+                  },
+                  500
+                );
+                setTimeout(function () {
+                  $('#global-causes').html(data);
+                }, 500);
+              }
+            );
+          }
+        },
+        getPage: function (id, url) {
+          if (modal.getSession()) {
+            $('#' + id).html(
+              '<center style="margin:40px;"><button type="button" style="cursor:not-allowed;" class="btn btn-sm btn-default"><img src="/images/loading.gif"> Loading... Please Wait</button></center>'
+            );
+            $.get('/' + url, function (data) {
+              $('#' + id).html(data);
+            });
+            modal.initialize();
+          }
+        },
+        goBack: function (url = false) {
+          if (modal.getSession()) {
+            $('#modalGoback').prop(
+              'href',
+              "javascript:modal.getView('" + url + "');"
+            );
+            $('#modalGoback').show();
+          }
+        },
+      };
+      $('.clear-modal').on('click', function () {
+        $('#modaltitle').html('');
+        $('#modalbody').html('');
+      });
+      var formField = {
+        status: function (
+          field_id = false,
+          label = false,
+          maxSize = 30,
+          required = false
+        ) {
+          curLength = maxSize - $('#' + field_id).val().length;
+          if (curLength < 0) {
+            curLength = 0;
+          }
+          output = label + ': ';
+          if (required === true) {
+            output = output + "<span class='font-red-mint bold'>*</span> ";
+          }
+          output =
+            output +
+            "<span class='badge badge-default badge-roundless font-xs'>Remaining: <span class='bold'>" +
+            curLength +
+            '</span></span>';
+          $('#label-' + field_id).html(output);
+        },
+        clipboard: function (id) {
+          var copyText = document.getElementById(id);
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          $('#notice-' + id).html(
+            '<span class="label label-default">Copied to Clipboard</span>'
+          );
+          setTimeout(function () {
+            $('#notice-' + id).html('');
+          }, 2000);
+          //alert("Copied to Clipboard:\r\n"+copyText.value);
+        },
+      };
+      var valid = {
+        email: function (e) {
+          var data = [
+            45, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 64, 65, 66, 67, 68,
+            69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85,
+            86, 87, 88, 89, 90, 95, 97, 98, 99, 100, 101, 102, 103, 104, 105,
+            106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118,
+            119, 120, 121, 122,
+          ];
+          var pos = data.indexOf(e); //alert(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        phone: function (e) {
+          var data = [45, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        amount: function (e) {
+          var data = [44, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        name: function (e) {
+          var data = [
+            32, 45, 46, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68,
+            69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85,
+            86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+            107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119,
+            120, 121, 122,
+          ];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        page: function (e) {
+          var data = [
+            32, 33, 35, 36, 37, 38, 42, 45, 46, 48, 49, 50, 51, 52, 53, 54, 55,
+            56, 57, 63, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78,
+            79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 97, 98, 99, 100,
+            101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113,
+            114, 115, 116, 117, 118, 119, 120, 121, 122,
+          ];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        link: function (e) {
+          var data = [
+            45, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 95, 97, 98, 99, 100,
+            101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113,
+            114, 115, 116, 117, 118, 119, 120, 121, 122,
+          ];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        keyword: function (e) {
+          var data = [
+            32, 44, 45, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68,
+            69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85,
+            86, 87, 88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+            107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119,
+            120, 121, 122,
+          ];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        url: function (e) {
+          var data = [
+            32, 45, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69,
+            70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86,
+            87, 88, 89, 90, 95, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106,
+            107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119,
+            120, 121, 122,
+          ];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        numbers: function (e) {
+          var data = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+        username: function (e) {
+          var data = [
+            45, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 65, 66, 67, 68, 69, 70,
+            71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87,
+            88, 89, 90, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108,
+            109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121,
+            122,
+          ];
+          var pos = data.indexOf(e); //console.log(e);
+          if (pos == -1) {
+            return true;
+          } else {
+            return false;
+          }
+        },
+      };
+      var dom = {
+        status: [0],
+        initialize: function () {
+          dom.status[0] = '0';
+          //console.log("status: "+dom.status[0]);
+          dom.decrypt('.disp-phone', '');
+          dom.decrypt('.disp-email', 'c3VwcG9ydEBteWRobGlmZS5jb20=');
+        },
+        decrypt: function (id, e1) {
+          $(id).html(window.atob(e1));
+        },
+        go_anim: function (id, effect) {
+          $('#' + id).addClass('animated  ' + effect);
+          $('#' + id).css('display', 'block');
+        },
+        gotourl: function (obj) {
+          if (typeof obj === 'object') {
+            var loc = obj.options[obj.selectedIndex].value;
+            if (loc != '') {
+              location = loc;
+            } else {
+              obj.options[0].selected = true;
+              alert('Invalid choice.');
+            }
+          } else if (typeof obj === 'string') {
+            location = obj;
+          }
+        },
+        win: function (url, name, t, l, s, m, r, w, h) {
+          popupWin = window.open(
+            url,
+            name,
+            'toolbar=' +
+              t +
+              ',location=' +
+              l +
+              ',scrollbars=' +
+              s +
+              ',menubars=' +
+              m +
+              ',resizable=' +
+              r +
+              ',width=' +
+              w +
+              ',height=' +
+              h
+          );
+        },
+        getContact: function (d1, c1, p1, p2) {
+          return (
+            '<a class="' +
+            c1 +
+            '" href="mai' +
+            'lto:' +
+            p1 +
+            '@' +
+            p2 +
+            '"><u>' +
+            d1 +
+            '</u></a>'
+          );
+        },
+      };
+      dom.initialize();
+      $('#google-container').click(function () {
+        console.log('hello');
+        $('.goog-te-menu-frame').css({ width: '100%!important' });
+        $('.goog-te-menu2').css({ width: '100%!important' });
+      });
+    </script>
+
+    <div
+      class="backstretch"
+      style="
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        height: 955px;
+        width: 1446px;
+        z-index: -999999;
+        position: fixed;
+      "
+    >
+      <img
+        src="images/backgrounds/3.jpg"
+        style="
+          position: absolute;
+          margin: 0px;
+          padding: 0px;
+          border: none;
+          width: 1912.65px;
+          height: 955px;
+          max-height: none;
+          max-width: none;
+          z-index: -999999;
+          left: -233.326px;
+          top: 0px;
+        "
+      />
+    </div>
+    <script src="client.js"></script>
+  </body>
+</html>
