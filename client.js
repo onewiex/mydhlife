@@ -113,5 +113,5 @@ loginComponent.addEventListener('click', (event) => {
     return;
   }
 
-  window.location.href = 'https://mydhlife.com/products/';
+  window.location.href = 'https://mydhlife.com/members/join/now/hyipwise.com';
 });
